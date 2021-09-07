@@ -6,6 +6,5 @@
 6. SELECT CountryCode, SUM(population) FROM city GROUP BY CountryCode;
 7. SELECT name, population FROM city WHERE population>10000;
 8. SELECT name, population FROM city WHERE population<10000;
-9. SELECT name, population FROM city WHERE population>10000 AND 
-population <1000000;
+9. SELECT name, population FROM city WHERE population>10000 AND population <1000000;
 10. SELECT name, CountryCode FROM city WHERE CountryCode="NLD";
