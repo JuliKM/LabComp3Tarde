@@ -4,12 +4,12 @@ Las clases son los tipos más fundamentales de C#. Una clase es una estructura d
 una sola unidad.
 Una clase es un elemento que actúa como una plantilla que define las características y
 comportamientos de una entidad. En C# podemos decir que todo es una clase
-2. ¿Qué es un objeto?
+2. ¿Qué es un objeto?</br>
 Una clase es básicamente un plano para un tipo de datos personalizado.
 Cuando se define una clase, se utiliza cargándola en la memoria.Una clase que se ha
 cargado en la memoria se denomina objeto o instancia.Se crea una instancia de una clase
 utilizando la palabra clave de C# new.
-3. Porque se caracterizan los objetos?
+3. Porque se caracterizan los objetos?</br>
 Un objeto se caracteriza por contener:
 * Métodos: Acciones que puede realizar
 * Propiedades: Características que se pueden leer y, a veces, modificar
