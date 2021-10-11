@@ -8,3 +8,4 @@
 8. SELECT name, population FROM city WHERE population<10000;
 9. SELECT name, population FROM city WHERE population>10000 AND population <1000000;
 10. SELECT name, CountryCode FROM city WHERE CountryCode="NLD";
+26. SELECT * FROM mundo.country JOIN mundo.city ON country.Code = city.CountryCode WHERE city.Name LIKE "Buenos Aires";
