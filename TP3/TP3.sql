@@ -7,5 +7,14 @@
 7. SELECT name, population FROM city WHERE population>10000;
 8. SELECT name, population FROM city WHERE population<10000;
 9. SELECT name, population FROM city WHERE population>10000 AND population <1000000;
+9.b SELECT Name, countryCode FROM city WHERE population BETWEEN 100000 AND 10000000;
 10. SELECT name, CountryCode FROM city WHERE CountryCode="NLD";
+11. SELECT name, countryCode FROM city WHERE countryCode = 'AFG' OR countryCode = 'CAN' OR countryCode = 'MEX';
+12. SELECT name, countryCode FROM city WHERE name LIKE 'P%';
+13. SELECT name, countryCode FROM city WHERE name LIKE '%E';
+14. SELECT name, countryCode FROM city WHERE name LIKE '%MA%';
+20. INSERT INTO city (ID, Name, CountryCode, District, Population) VALUES (4080, 'Tunuyan', 'ARG', 'Mendoza', 110000);
+21. INSERT INTO country (Code, Name, Capital) VALUES ('MZA', 'Mendoza', 4080);
+22. UPDATE city SET name = 'Tupungato' WHERE ID = 4080;
+23. UPDATE countrylanguage SET Language = 'Español' WHERE Language = 'Spanish';
 26. SELECT * FROM mundo.country JOIN mundo.city ON country.Code = city.CountryCode WHERE city.Name LIKE "Buenos Aires";
