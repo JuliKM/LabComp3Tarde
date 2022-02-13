@@ -13,8 +13,20 @@
 12. SELECT name, countryCode FROM city WHERE name LIKE 'P%';
 13. SELECT name, countryCode FROM city WHERE name LIKE '%E';
 14. SELECT name, countryCode FROM city WHERE name LIKE '%MA%';
+15. SELECT SUM(population) FROM city;
+16. SELECT AVG(population) FROM city;
+17. SELECT COUNT(id) FROM city;
+18. SELECT MAX(population) FROM city;
+19. SELECT MIN(population) FROM city;
 20. INSERT INTO city (ID, Name, CountryCode, District, Population) VALUES (4080, 'Tunuyan', 'ARG', 'Mendoza', 110000);
 21. INSERT INTO country (Code, Name, Capital) VALUES ('MZA', 'Mendoza', 4080);
 22. UPDATE city SET name = 'Tupungato' WHERE ID = 4080;
 23. UPDATE countrylanguage SET Language = 'Español' WHERE Language = 'Spanish';
+24. DELETE FROM country WHERE Code = "MZA";
+25. DELETE FROM city WHERE Name = "TUPUNGATO";
 26. SELECT * FROM mundo.country JOIN mundo.city ON country.Code = city.CountryCode WHERE city.Name LIKE "Buenos Aires";
+27. SELECT city.name, district, country.name, language FROM city, country, countrylanguage WHERE country.code =  'ARG' ORDER BY district;
+28. SELECT * FROM city JOIN country ON city.countryCode= country.code JOIN countryLanguage ON country.code = countryLanguage.countryCode
+29. SELECT * FROM city JOIN country ON city.countryCode= country.code JOIN countryLanguage ON country.code = countryLanguage.countryCode WHERE country.code = 'ARG';
+30. SELECT * FROM city JOIN country ON city.countryCode= country.code JOIN countryLanguage ON country.code = countryLanguage.countryCode WHERE language IN ('English', 'Spanish', 'Portuguese') OR country.population > 1000000;
+31. SELECT * FROM country LEFT JOIN countryLanguage ON countryLanguage.countryCode = country.code AND IsOfficial = 'T';
