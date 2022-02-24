@@ -25,7 +25,7 @@
 24. DELETE FROM country WHERE Code = "MZA";
 25. DELETE FROM city WHERE Name = "TUPUNGATO";
 26. SELECT * FROM mundo.country JOIN mundo.city ON country.Code = city.CountryCode WHERE city.Name LIKE "Buenos Aires";
-27. SELECT city.name, district, country.name, language FROM city, country, countrylanguage WHERE country.code =  'ARG' ORDER BY district;
+27. SELECT city.name, district, country.name, language FROM city, country, countrylanguage WHERE country.code =  'ARG' AND city.countrycode =  'ARG' AND countrylanguage.countrycode =  'ARG'  ORDER BY district;
 28. SELECT * FROM city JOIN country ON city.countryCode= country.code JOIN countryLanguage ON country.code = countryLanguage.countryCode
 29. SELECT * FROM city JOIN country ON city.countryCode= country.code JOIN countryLanguage ON country.code = countryLanguage.countryCode WHERE country.code = 'ARG';
 30. SELECT * FROM city JOIN country ON city.countryCode= country.code JOIN countryLanguage ON country.code = countryLanguage.countryCode WHERE language IN ('English', 'Spanish', 'Portuguese') OR country.population > 1000000;
